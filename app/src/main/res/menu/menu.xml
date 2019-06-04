@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/version_original"
+        android:icon="@drawable/baseline_dashboard_black_24"
+        android:title="Version Original"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/version_infinito"
+        android:icon="@drawable/ic_line_style_black_24dp"
+        android:title="Version Infinito"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/pausa"
+        android:icon="@drawable/ic_pause_black_24dp"
+        android:title="pausa"
+        app:showAsAction="always"/>
+
+
+</menu>

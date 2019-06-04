@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,60 +7,85 @@
     android:orientation="vertical"
     tools:context=".CajaColor">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="33"
-        android:orientation="horizontal">
 
-        <com.example.appb.LinearLayoutCustom
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="50"
-            android:background="@color/O1"
-            android:onClick="cambiaColor"></com.example.appb.LinearLayoutCustom>
-
-        <com.example.appb.LinearLayoutCustom
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="50"
-            android:background="@color/O2"
-            android:onClick="cambiaColor"></com.example.appb.LinearLayoutCustom>
-    </LinearLayout>
-
-    <com.example.appb.LinearLayoutCustom
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="33"
-        android:background="@color/O3"
-        android:onClick="cambiaColor"></com.example.appb.LinearLayoutCustom>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="34"
-        android:orientation="horizontal">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
 
-        <com.example.appb.LinearLayoutCustom
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
             android:layout_weight="33"
-            android:background="@color/O4"
-            android:onClick="cambiaColor"></com.example.appb.LinearLayoutCustom>
+            android:orientation="horizontal">
+
+            <com.example.appb.LinearLayoutCustom
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:background="@color/O1"
+                android:onClick="cambiaColor" />
+
+            <com.example.appb.LinearLayoutCustom
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:background="@color/O2"
+                android:onClick="cambiaColor"></com.example.appb.LinearLayoutCustom>
+        </LinearLayout>
 
         <com.example.appb.LinearLayoutCustom
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
             android:layout_weight="33"
-            android:background="@color/O5"
-            android:onClick="cambiaColor"></com.example.appb.LinearLayoutCustom>
+            android:background="@color/O3"
+            android:onClick="cambiaColor" />
 
-        <com.example.appb.LinearLayoutCustom
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
             android:layout_weight="34"
-            android:background="@color/O6"
-            android:onClick="cambiaColor"></com.example.appb.LinearLayoutCustom>
+            android:orientation="horizontal">
+
+            <com.example.appb.LinearLayoutCustom
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="33"
+                android:background="@color/O4"
+                android:onClick="cambiaColor"></com.example.appb.LinearLayoutCustom>
+
+            <com.example.appb.LinearLayoutCustom
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="33"
+                android:background="@color/O5"
+                android:onClick="cambiaColor"></com.example.appb.LinearLayoutCustom>
+
+            <com.example.appb.LinearLayoutCustom
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="34"
+                android:background="@color/O6"
+                android:onClick="cambiaColor"></com.example.appb.LinearLayoutCustom>
+        </LinearLayout>
+
     </LinearLayout>
 
-</LinearLayout>
+    <Button
+        android:id="@+id/boton_empezar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:onClick="empezarPartida"
+        android:text="EMPEZAR"
+        android:textSize="40sp"
+        android:visibility="visible"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:background="@drawable/boton_redondeado"/>
+</FrameLayout>

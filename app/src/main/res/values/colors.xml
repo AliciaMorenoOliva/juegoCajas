@@ -13,4 +13,12 @@
     <color name="O6">#FADF8B5E</color>
     <color name="negro">#141212</color>
     <color name="blanco">#FAFFFFFF</color>
+    <color name="white">#FFF</color>
+    <color name="verdeEsmeralda">#287233</color>
+    <color name="UCLABlue">#536895</color>
+    <color name="black">#000</color>
+    <color name="aguamarina">#9fd5d1</color>
+    <color name="dukeBlue">#001a57</color>
+    <color name="cian">#00ffff</color>
+
 </resources>
